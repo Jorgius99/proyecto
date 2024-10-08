@@ -2,6 +2,22 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Docker
+
+We have 2 services in Docker following Docker instructions: 
+
+Build:
+```sh
+docker build -t external_pages .
+```
+
+Deploy to local nginx
+
+```sh
+# In local should be accesible in port number 81
+docker run -p 81:80 external_pages
+```
+
 ## Available Scripts
 
 In the project directory, you can run:
